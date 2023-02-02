@@ -30,48 +30,90 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
   </head>
-  <body class="body">
+  <body class="body max-w-6xl mx-auto">
     <header class="header text-white">
-      <nav
-        class="topnav grid grid-cols-3 gap-2 items-center justify-between bg-white bg-opacity-10 h-14 px-24"
-      >
-        <section class="flex items-center justify-start gap-1">
-          <div>
-            <select
-              class="select font-normal select-ghost bg-opacity-0 active:bg-opacity-0 rounded-none w-full max-w-xs"
+      <nav class="navbar bg-white bg-opacity-10">
+        <section class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-purple-500 rounded-box w-52"
             >
-              <option disabled selected>Trivia</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
+              <li><a>Trivia</a></li>
+              <li><a>Quiz</a></li>
+              <li><a>Leaderboard</a></li>
+            </ul>
           </div>
-          <div>
-            <select
-              class="select font-normal select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
-            >
-              <option disabled selected>Quiz</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-          </div>
-          <div>
-            <select
-              class="select font-normal select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
-            >
-              <option disabled selected>Leaderboard</option>
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
+          <section class="navbar-center hidden md:flex">
+            <ul class="menu menu-horizontal px-1">
+              <div class="dropdown text-black">
+                <label
+                  tabindex="0"
+                  class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
+                  >Trivia</label
+                >
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown text-black">
+                <label
+                  tabindex="0"
+                  class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
+                  >Quiz</label
+                >
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+              <div class="dropdown text-black">
+                <label
+                  tabindex="0"
+                  class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
+                  >Leaderboard</label
+                >
+                <ul
+                  tabindex="0"
+                  class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Item 2</a></li>
+                </ul>
+              </div>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <div class="hidden md:flex navbar-center items-center justify-center gap-4">
+            <img class="w-9" src="./assets/logo/logo.png" alt="" />
+            <p class="font-bold">LOGO</p>
           </div>
         </section>
-        <div class="flex items-center justify-center gap-4">
-          <img class="w-9" src="./assets/logo/logo.png" alt="" />
-          <p class="font-bold">LOGO</p>
-        </div>
-        <section class="flex items-center justify-end gap-4">
+        <section class="flex navbar-end items-center justify-end gap-4">
           <div>
             <button
               class="btn btn-sm normal-case font-normal btn-ghost rounded-full"
@@ -88,38 +130,68 @@
           </div>
         </section>
       </nav>
-      <section class="grid grid-cols-2">
-        <div class="flex justify-end mt-20">
-          <div class="w-3/4">
-            <p class="topsectionleft pb-0">
+      <section class="grid md:grid-cols-2">
+        <div class="flex justify-end items-center">
+          <div class="md:w-3/4 text-center md:text-left">
+            <p class="topsectionleft text-5xl pt-6">
               Daily Quiz, Daily Bonus- Play Today!
             </p>
-            <p class="font-sm font-normal mb-9">
+            <p class="font-normal py-4">
               QuizKwik is the daily Trivia and quiz playing platform. It brings
               some exciting surprises every day.
             </p>
             <button
-              class="btn btn-lg bg-yellow-300 hover:bg-yellow-600 text-black text-2xl font-normal"
+              class="btn bg-yellow-300 hover:bg-yellow-600 text-black text-2xl font-normal"
             >
               <p class="flex items-center justify-around">
-                <i class="fa-solid fa-circle-play"></i>
-                &nbsp &nbsp<span>Play Today</span> &nbsp &nbsp
+                <i class="fa-solid fa-circle-play"></i>&nbsp<span
+                  >Play Today</span
+                >
+                &nbsp
                 <i class="fa-solid fa-arrow-right-long"></i>
               </p>
             </button>
           </div>
         </div>
-        <div class="topsectionright">
+        <div class="topsectionright bg-no-repeat bg-contain bg-bottom mt-12">
           <img
-            class="toprightimg mx-auto mt-10"
+            class="toprightimg mx-auto w-1/3"
             src="./assets/logo/badge.png"
             alt=""
           />
         </div>
       </section>
-      <section class="text-black pb-12">
-        <div class="p-40 border-2 rounded-xl border-red-500">padding</div>
-      </section>
+      <!-- <section class="text-black bg-white mx-20">
+        <div class="text-center grid grid-cols-4">
+          <div class="choose-option">
+            <p class="text-3xl">Choose the option</p>
+            <p>Go to study in the year of your choice</p>
+          </div>
+          <div class="col-span-2 flex items-center justify-around">
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/logo/icon/icon1.png" alt="" />
+              <p>Daily Trivia</p>
+              <button>
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/logo/icon/icon2.png" alt="" />
+              <p>Daily Play & Win</p>
+              <button>
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <img src="./assets/logo/icon/icon3.png" alt="" />
+              <p>Play Like King</p>
+              <button>
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> -->
     </header>
     <script src="./js/script.js"></script>
   </body>
