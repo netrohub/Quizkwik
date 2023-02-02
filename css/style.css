@@ -1,13 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 .body {
   width: 1440px;
   margin: 0 auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.topnav {
   font-family: "Sora", sans-serif;
 }
 
 .header {
-  background-image: url("/assets/img/topbg.png");
+  background-image: url("assets\img\topbg.png");
+  height: 778px;
+}
+
+.topleftheader {
+  font-size: 64px;
+  font-weight: 900;
 }
 
 .btn-registration {

@@ -33,12 +33,12 @@
   <body class="body">
     <header class="header text-white">
       <nav
-        class="grid grid-cols-3 gap-2 items-center justify-between bg-white bg-opacity-10 h-14 px-24"
+        class="topnav grid grid-cols-3 gap-2 items-center justify-between bg-white bg-opacity-10 h-14 px-24"
       >
         <section class="flex items-center justify-start gap-1">
           <div>
             <select
-              class="select select-ghost bg-opacity-0 active:bg-opacity-0 rounded-none w-full max-w-xs"
+              class="select font-normal select-ghost bg-opacity-0 active:bg-opacity-0 rounded-none w-full max-w-xs"
             >
               <option disabled selected>Trivia</option>
               <option>Option 1</option>
@@ -48,7 +48,7 @@
           </div>
           <div>
             <select
-              class="select select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
+              class="select font-normal select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
             >
               <option disabled selected>Quiz</option>
               <option>Option 1</option>
@@ -58,7 +58,7 @@
           </div>
           <div>
             <select
-              class="select select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
+              class="select font-normal select-ghost bg-opacity-0 rounded-none w-full max-w-xs"
             >
               <option disabled selected>Leaderboard</option>
               <option>Option 1</option>
@@ -73,20 +73,33 @@
         </div>
         <section class="flex items-center justify-end gap-4">
           <div>
-            <button class="btn btn-sm normal-case btn-ghost rounded-full">
+            <button
+              class="btn btn-sm normal-case font-normal btn-ghost rounded-full"
+            >
               Login
             </button>
           </div>
           <div>
             <button
-              class="btn btn-sm btn-registration normal-case text-blackpy-1 px-6 bg-purple-400 border-none rounded-full hover:text-white hover:bg-purple-900"
+              class="btn btn-sm btn-registration font-normal normal-case text-blackpy-1 px-6 bg-purple-400 border-none rounded-full hover:text-white hover:bg-purple-900"
             >
               Registration
             </button>
           </div>
         </section>
       </nav>
-      <section class="py-72"></section>
+      <section class="grid grid-cols-2">
+        <div class="flex justify-right">
+          <div class="w-3/4">
+            <h2 class="topleftheader">Daily Quiz, Daily Bonus- Play Today</h2>
+            <p class="font-sm font-normal">
+              QuizKwik is the daily Trivia and quiz playing platform. It brings
+              some exciting surprises every day.
+            </p>
+          </div>
+        </div>
+        <div><h2>section2</h2></div>
+      </section>
     </header>
     <script src="./js/script.js"></script>
   </body>
