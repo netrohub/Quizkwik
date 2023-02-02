@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 
 .body {
-  width: 1440px;
-  margin: 0 auto;
   font-family: "Source Sans Pro", sans-serif;
 }
 
@@ -13,28 +11,17 @@
 
 .header {
   background-image: url("../assets/img/topbg.png");
-  height: 778px;
-}
-
-.topsectionleft {
-  font-size: 64px;
-  -webkit-text-stroke: 2px white;
-  font-weight: 900;
 }
 
 .topsectionright {
   background-image: url("../assets/img/rightbg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 550px;
-  height: 601px;
 }
 
-.toprightimg {
-  width: 342px;
-  height: 395px;
+.topsectionleft {
+  -webkit-text-stroke: 2px white;
+  font-weight: 900;
 }
 
-.btn-registration {
-  background: rgba(194, 167, 246, 1);
+.choose-option {
+  background-color: rgba(235, 226, 252, 1);
 }
