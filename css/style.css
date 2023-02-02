@@ -12,13 +12,26 @@
 }
 
 .header {
-  background-image: url("assets\img\topbg.png");
+  background-image: url("/assets/img/topbg.png");
   height: 778px;
 }
 
-.topleftheader {
+.topsectionleft {
   font-size: 64px;
   font-weight: 900;
+}
+
+.topsectionright {
+  background-image: url("/assets/img/rightbg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 550px;
+  height: 601px;
+}
+
+.toprightimg {
+  width: 342px;
+  height: 395px;
 }
 
 .btn-registration {
