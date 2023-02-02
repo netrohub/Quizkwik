@@ -12,7 +12,7 @@
 }
 
 .header {
-  background-image: url("/assets/img/topbg.png");
+  background-image: url("../assets/img/topbg.png");
   height: 778px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .topsectionright {
-  background-image: url("/assets/img/rightbg.png");
+  background-image: url("../assets/img/rightbg.png");
   background-repeat: no-repeat;
   background-position: bottom;
   width: 550px;
