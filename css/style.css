@@ -7,7 +7,7 @@
 }
 
 .header {
-  background-image: url("/assets/img/topbg.png");
+  background-image: url("./assets/img/topbg.png");
 }
 
 .btn-registration {
