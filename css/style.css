@@ -17,7 +17,13 @@
   background-image: url("../assets/img/rightbg.png");
 }
 
-.topsectionleft {
-  -webkit-text-stroke: 2px white;
-  font-weight: 900;
+.card1 {
+  background-image: url("../assets/img/cards/card1.png");
 }
+.card2 {
+  background-image: url("../assets/img/cards/card2.png");
+}
+.card3 {
+  background-image: url("../assets/img/cards/card3.png");
+}
+
