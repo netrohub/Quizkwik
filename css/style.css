@@ -5,6 +5,42 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.primary-main {
+  color: rgba(153, 108, 240, 1);
+}
+
+.primary-header {
+  color: rgba(71, 71, 71, 1);
+}
+
+.primary-main-button {
+  color: rgba(153, 108, 240, 1);
+}
+
+.primary-main-button:hover {
+  font-weight: bold;
+}
+
+.primary-darker {
+  color: rgba(92, 65, 144, 1);
+}
+
+.primary-white {
+  color: white;
+}
+
+.primary-white:hover {
+  color: rgba(153, 108, 240, 1);
+}
+
+.primary-black {
+  color: black;
+}
+.primary-black:hover {
+  color: white;
+  background-color: rgba(153, 108, 240, 1);
+}
+
 .topnav {
   font-family: "Sora", sans-serif;
 }
@@ -26,4 +62,3 @@
 .card3 {
   background-image: url("../assets/img/cards/card3.png");
 }
-
