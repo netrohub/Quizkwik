@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quiz Kwik</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
@@ -32,7 +32,8 @@
   </head>
   <body class="body max-w-6xl mx-auto">
     <header class="header text-white">
-      <nav class="navbar bg-white bg-opacity-10">
+      <!-- navbar -->
+      <nav class="navbar pr-6 md:px-32 bg-white bg-opacity-10">
         <section class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -108,7 +109,9 @@
           </section>
         </section>
         <section>
-          <div class="hidden md:flex navbar-center items-center justify-center gap-4">
+          <div
+            class="hidden md:flex navbar-center items-center justify-center gap-4"
+          >
             <img class="w-9" src="./assets/logo/logo.png" alt="" />
             <p class="font-bold">LOGO</p>
           </div>
@@ -130,69 +133,224 @@
           </div>
         </section>
       </nav>
-      <section class="grid md:grid-cols-2">
-        <div class="flex justify-end items-center">
-          <div class="md:w-3/4 text-center md:text-left">
-            <p class="topsectionleft text-5xl pt-6">
-              Daily Quiz, Daily Bonus- Play Today!
-            </p>
-            <p class="font-normal py-4">
-              QuizKwik is the daily Trivia and quiz playing platform. It brings
-              some exciting surprises every day.
-            </p>
-            <button
-              class="btn bg-yellow-300 hover:bg-yellow-600 text-black text-2xl font-normal"
-            >
-              <p class="flex items-center justify-around">
-                <i class="fa-solid fa-circle-play"></i>&nbsp<span
-                  >Play Today</span
-                >
-                &nbsp
-                <i class="fa-solid fa-arrow-right-long"></i>
+      <!-- hero section -->
+      <section class="max-w-4xl mx-auto md:pb-28">
+        <section class="grid md:grid-cols-2 gap-8 pt-8">
+          <!-- left part -->
+          <aside class="flex justify-start items-center">
+            <div class="md: text-center md:text-left">
+              <h2 class="topsectionleft text-6xl">
+                Daily Quiz, Daily Bonus- Play Today!
+              </h2>
+              <p class="text-lg py-2">
+                QuizKwik is the daily Trivia and quiz playing platform. It
+                brings some exciting surprises every day.
               </p>
-            </button>
+              <div>
+                <button
+                  class="btn bg-yellow-300 hover:bg-yellow-600 text-black text-2xl font-normal"
+                >
+                  <p class="flex items-center justify-around">
+                    <i class="fa-solid fa-circle-play"></i>&nbsp<span
+                      >Play Today</span
+                    >
+                    &nbsp
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </p>
+                </button>
+              </div>
+            </div>
+          </aside>
+          <!-- right part -->
+          <aside
+            class="topsectionright bg-no-repeat bg-contain bg-left-bottom bg-origin-content pr-4"
+          >
+            <img
+              class="toprightimg mx-auto w-2/3"
+              src="./assets/logo/badge.png"
+              alt=""
+            />
+          </aside>
+        </section>
+      </section>
+    </header>
+    <!-- four options -->
+    <section
+      class="text-black max-w-4xl mx-4 md:mx-auto bg-white rounded-2xl shadow-xl md:-mt-28"
+    >
+      <div
+        class="text-center flex flex-col md:flex-row items-center justify-between gap-4 p-4"
+      >
+        <div
+          class="flex flex-col w-full h-full items-center justify-center bg-gray-200 rounded-2xl p-9"
+        >
+          <h3 class="text-3xl text-blue-600 font-black">Choose the option</h3>
+          <p>Go to study in the year of your choice</p>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
+        >
+          <img class="w-2/3" src="./assets/logo/icon/icon1.png" alt="" />
+          <p class="text-lg font-black">Daily Trivia</p>
+          <button class="text-blue-400">
+            Start Now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bg-purple-400 text-white h-full w-full p-4 rounded-2xl"
+        >
+          <img class="w-2/3" src="./assets/logo/icon/icon2.png" alt="" />
+          <p class="text-lg font-black">Daily Play & Win</p>
+          <button>
+            Start Now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
+        >
+          <img class="w-2/3" src="./assets/logo/icon/icon3.png" alt="" />
+          <p class="text-lg font-black">Play Like King</p>
+          <button class="text-blue-400">
+            Start Now <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- play and earn bonus -->
+    <section class="py-20">
+      <div class="text-center pb-8">
+        <h4 class="text-5xl font-black">Play, Learn and Earn bonus</h4>
+        <p class="text-2xl text-gray-400">Check yourself, Earn yourself!</p>
+      </div>
+      <!-- 3 cards -->
+      <div
+        class="cards grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto gap-4 text-white"
+      >
+        <div class="card1 h-96 w-72 rounded-2xl mx-auto relative">
+          <div class="absolute bottom-4 left-4">
+            <p class="font-black text-2xl">Test your IQ!</p>
+            <p>
+              <button class="hover:text-blue-400">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </p>
           </div>
         </div>
-        <div class="topsectionright bg-no-repeat bg-contain bg-bottom mt-12">
+        <div class="card2 h-96 w-72 rounded-2xl mx-auto relative">
+          <div class="absolute bottom-4 left-4">
+            <p class="font-black text-2xl">Learn & Earn</p>
+            <p>
+              <button class="hover:text-blue-400">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+        <div class="card3 h-96 w-72 rounded-2xl mx-auto relative">
+          <div class="absolute bottom-4 left-4">
+            <p class="font-black text-2xl">Test before play</p>
+            <p>
+              <button class="hover:text-blue-400">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- winners section -->
+    <section class="py-20 bg-gray-100 rounded-xl">
+      <div
+        class="flex flex-col gap-4 items-center justify-center md:w-2/3 mx-auto p-1"
+      >
+        <div class="text-center">
+          <h2 class="font-black text-5xl pb-6">QuizKwik Winners</h2>
+          <p class="px-2">
+            Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
+            libero purus at scelerisque cursus. Feugiat mauris integer facilisis
+            eget nunc placerat semper orci quis. Neque volutpat molestie at
+            pellentesque et cursus non. Enim sodales pellentesque
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-2">
+          <div class="flex flex-col items-center justify-center">
+            <img src="./assets/img/round/round1.png" alt="" />
+            <p class="text-center pt-2">
+              <span class="text-md md:text-xl font-bold">Mahmud Saimon</span
+              ><br /><span class="text-sm md:text-md">Second place</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./assets/logo/crown.png" alt="" />
+            <img src="./assets/img/round/round2.png" alt="" />
+            <p class="text-center pt-2">
+              <span class="text-md md:text-xl font-bold">Jonathan Doe</span
+              ><br /><span class="text-sm md:text-md">First place</span>
+            </p>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img src="./assets/img/round/round3.png" alt="" />
+            <p class="text-center pt-2">
+              <span class="text-md md:text-xl font-bold">Angel Sadia</span
+              ><br /><span class="text-sm md:text-md">Third place</span>
+            </p>
+          </div>
+        </div>
+        <div>
+          <button
+            class="bg-yellow-200 hover:bg-yellow-400 px-4 py-2 flex items-center justify-center rounded-md"
+          >
+            <p>LEARN MORE</p>
+            &nbsp; &nbsp;
+            <p>
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </p>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Top of the list section -->
+    <section class="py-20">
+      <div class="text-center">
+        <h3 class="font-black text-5xl text-blue-800">Be top of the list</h3>
+        <p class="p-2 w-2/3 mx-auto pt-4">
+          Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
+          libero purus at scelerisque cursus. Feugiat mauris integer facilisis
+          eget nunc placerat semper orci quis. Neque volutpat molestie at
+          pellentesque et cursus non. Enim sodales pellentesque
+        </p>
+      </div>
+      <div class="relative py-20">
+        <img
+          class="absolute bottom-20 left-2 md:bottom-32 md:left-32 z-0 w-1/4 md:w-auto"
+          src="./assets/logo/dotted.png"
+          alt=""
+        />
+        <img
+          class="absolute top-24 right-4 md:top-40 md:right-32 z-0 w-1/4 md:w-auto"
+          src="./assets/logo/dotted.png"
+          alt=""
+        />
+        <div class="flex items-center justify-center gap-1 md:gap-4">
           <img
-            class="toprightimg mx-auto w-1/3"
-            src="./assets/logo/badge.png"
+            class="mb-8 md:mb-24 z-10 w-1/4 md:w-auto"
+            src="./assets/img/list/list1.png"
+            alt=""
+          />
+          <img
+            class="mt-8 md:mt-24 z-10 w-1/4 md:w-auto"
+            src="./assets/img/list/list2.png"
+            alt=""
+          /><img
+            class="mb-8 md:mb-24 z-10 w-1/4 md:w-auto"
+            src="./assets/img/list/list3.png"
             alt=""
           />
         </div>
-      </section>
-      <!-- <section class="text-black bg-white mx-20">
-        <div class="text-center grid grid-cols-4">
-          <div class="choose-option">
-            <p class="text-3xl">Choose the option</p>
-            <p>Go to study in the year of your choice</p>
-          </div>
-          <div class="col-span-2 flex items-center justify-around">
-            <div class="flex flex-col items-center justify-center">
-              <img src="./assets/logo/icon/icon1.png" alt="" />
-              <p>Daily Trivia</p>
-              <button>
-                Start Now <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-              <img src="./assets/logo/icon/icon2.png" alt="" />
-              <p>Daily Play & Win</p>
-              <button>
-                Start Now <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
-            </div>
-            <div class="flex flex-col items-center justify-center">
-              <img src="./assets/logo/icon/icon3.png" alt="" />
-              <p>Play Like King</p>
-              <button>
-                Start Now <i class="fa-solid fa-arrow-right-long"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </header>
+      </div>
+    </section>
+    <!-- how to play section -->
+    <section><div></div></section>
     <script src="./js/script.js"></script>
   </body>
 </html>
