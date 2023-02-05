@@ -224,7 +224,7 @@
       </div>
       <!-- 3 cards -->
       <div
-        class="cards grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto gap-4 text-white"
+        class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto gap-4 text-white"
       >
         <div class="card1 h-96 w-72 rounded-2xl mx-auto relative">
           <div class="absolute bottom-4 left-4">
@@ -350,14 +350,70 @@
       </div>
     </section>
     <!-- how to play section -->
-    <section>
-      <div class="text-center p-4">
-        <h5 class="font-black text-2xl">Here's How It Works</h5>
+    <section
+      class="flex flex-col items-center justify-center py-20 bg-purple-100"
+    >
+      <!-- how it works floating -->
+      <div class="text-center p-4 md:w-2/3 m-4 shadow-2xl rounded-2xl bg-white -mt-40">
+        <p class="font-black text-4xl md:text-6xl text-slate-400 pb-2">Here's How It Works</p>
         <p>
           Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
           libero purus at scelerisque cursus. Feugiat mauris integer facilisis
           eget nunc placerat semper orci quis.
         </p>
+      </div>
+      <!-- 3 instructions -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-4 m-4 md:w-3/4 pt-4"
+      >
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Enter the game</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game1.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque lobortis orci ac.
+          </p>
+        </div>
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Play the game</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game2.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque et dui leo aenean.
+          </p>
+        </div>
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Earn Coins</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game3.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+            dictum convallis.
+          </p>
+        </div>
       </div>
     </section>
     <script src="./js/script.js"></script>
