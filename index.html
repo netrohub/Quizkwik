@@ -139,10 +139,10 @@
           <!-- left part -->
           <aside class="flex justify-start items-center">
             <div class="md: text-center md:text-left">
-              <h2 class="topsectionleft text-5xl pb-2">
+              <h2 class="topsectionleft text-5xl p-4 md:p-0 pb-2">
                 Daily Quiz, Daily Bonus- Play Today!
               </h2>
-              <p class="text-lg pb-4">
+              <p class="text-lg p-4 md:p-0 pb-4">
                 QuizKwik is the daily Trivia and quiz playing platform. It
                 brings some exciting surprises every day.
               </p>
@@ -179,42 +179,48 @@
       class="text-black max-w-4xl mx-4 md:mx-auto bg-white rounded-2xl shadow-xl md:-mt-28"
     >
       <div
-        class="text-center flex flex-col md:flex-row items-center justify-between gap-4 p-4"
+        class="text-center grid grid-cols-1 md:grid-cols-4 items-center justify-center md:justify-between md:gap-4"
       >
-        <div
-          class="flex flex-col w-full h-full items-center justify-center bg-gray-200 rounded-2xl p-12"
-        >
-          <h3 class="text-3xl primary-darker font-black leading-none pb-2">
-            Choose the option
-          </h3>
-          <p class="leading-none">Go to study in the year of your choice</p>
+        <div class="col-span-1 md:bg-gray-200 bg-cover text-center py-8">
+          <div class="flex flex-col items-center justify-center rounded-2xl">
+            <h3 class="text-3xl primary-darker font-black leading-none pb-2">
+              Choose the option
+            </h3>
+            <p class="leading-none">Go to study in the year of your choice</p>
+          </div>
         </div>
-        <div
-          class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
-        >
-          <img class="w-2/3" src="./assets/logo/icon/icon1.svg" alt="" />
-          <p class="text-lg font-black pt-3">Daily Trivia</p>
-          <button class="primary-main-button">
-            Start Now <i class="fa-solid fa-arrow-right-long"></i>
-          </button>
-        </div>
-        <div
-          class="flex flex-col items-center justify-center bg-purple-400 text-white h-full w-full p-4 rounded-2xl"
-        >
-          <img class="w-2/3" src="./assets/logo/icon/icon2.svg" alt="" />
-          <p class="text-lg font-black pt-3">Daily Play & Win</p>
-          <button class="primary-white">
-            Start Now <i class="fa-solid fa-arrow-right-long"></i>
-          </button>
-        </div>
-        <div
-          class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
-        >
-          <img class="w-2/3" src="./assets/logo/icon/icon3.svg" alt="" />
-          <p class="text-lg font-black pt-3">Play Like King</p>
-          <button class="primary-main-button">
-            Start Now <i class="fa-solid fa-arrow-right-long"></i>
-          </button>
+        <div class="col-span-3 p-4">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <div
+              class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
+            >
+              <img class="w-2/3" src="./assets/logo/icon/icon1.svg" alt="" />
+              <p class="text-lg font-black pt-3">Daily Trivia</p>
+              <button class="primary-main-button">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bg-purple-400 text-white h-full w-full p-4 rounded-2xl"
+            >
+              <img class="w-2/3" src="./assets/logo/icon/icon2.svg" alt="" />
+              <p class="text-lg font-black pt-3">Daily Play & Win</p>
+              <button class="primary-white">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
+            >
+              <img class="w-2/3" src="./assets/logo/icon/icon3.svg" alt="" />
+              <p class="text-lg font-black pt-3">Play Like King</p>
+              <button class="primary-main-button">
+                Start Now <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -283,7 +289,7 @@
             pellentesque et cursus non. Enim sodales pellentesque
           </p>
         </div>
-        <div class="flex items-center justify-center gap-2">
+        <div class="flex items-center justify-center gap-2 p-4">
           <div class="flex flex-col items-center justify-center">
             <img src="./assets/img/round/round1.png" alt="" />
             <p class="text-center pt-2">
@@ -388,7 +394,7 @@
             >
           </h6>
           <img
-            class="w-full md:h-52"
+            class="w-full md:h-52 bg-cover"
             src="./assets/img/games/game1.png"
             alt=""
           />
@@ -404,7 +410,7 @@
             >
           </h6>
           <img
-            class="w-full md:h-52"
+            class="w-full md:h-52 bg-cover"
             src="./assets/img/games/game2.png"
             alt=""
           />
@@ -420,7 +426,7 @@
             >
           </h6>
           <img
-            class="w-full md:h-52"
+            class="w-full md:h-52 bg-cover"
             src="./assets/img/games/game3.png"
             alt=""
           />
