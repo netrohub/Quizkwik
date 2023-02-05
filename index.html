@@ -63,7 +63,7 @@
           </div>
           <section class="navbar-center hidden md:flex">
             <ul class="menu menu-horizontal px-1">
-              <div class="dropdown text-black">
+              <div class="dropdown text-black dropdown-hover">
                 <label
                   tabindex="0"
                   class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
@@ -73,11 +73,11 @@
                   tabindex="0"
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
+                  <li><a class="w-full">Item 1</a></li>
+                  <li><a class="w-full">Item 2</a></li>
                 </ul>
               </div>
-              <div class="dropdown text-black">
+              <div class="dropdown text-black dropdown-hover">
                 <label
                   tabindex="0"
                   class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
@@ -87,11 +87,11 @@
                   tabindex="0"
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
+                  <li><a class="w-full">Item 1</a></li>
+                  <li><a class="w-full">Item 2</a></li>
                 </ul>
               </div>
-              <div class="dropdown text-black">
+              <div class="dropdown text-black dropdown-hover">
                 <label
                   tabindex="0"
                   class="btn btn-ghost bg-opacity-0 text-white font-normal btn-sm normal-case font-normal rounded-full"
@@ -101,8 +101,8 @@
                   tabindex="0"
                   class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
                 >
-                  <li><a>Item 1</a></li>
-                  <li><a>Item 2</a></li>
+                  <li><a class="w-full">Item 1</a></li>
+                  <li><a class="w-full">Item 2</a></li>
                 </ul>
               </div>
             </ul>
@@ -139,16 +139,16 @@
           <!-- left part -->
           <aside class="flex justify-start items-center">
             <div class="md: text-center md:text-left">
-              <h2 class="topsectionleft text-6xl">
+              <h2 class="topsectionleft text-5xl pb-2">
                 Daily Quiz, Daily Bonus- Play Today!
               </h2>
-              <p class="text-lg py-2">
+              <p class="text-lg pb-4">
                 QuizKwik is the daily Trivia and quiz playing platform. It
                 brings some exciting surprises every day.
               </p>
               <div>
                 <button
-                  class="btn bg-yellow-300 hover:bg-yellow-600 text-black text-2xl font-normal"
+                  class="btn bg-yellow-300 hover:bg-white text-black text-2xl font-normal"
                 >
                   <p class="flex items-center justify-around">
                     <i class="fa-solid fa-circle-play"></i>&nbsp<span
@@ -174,7 +174,7 @@
         </section>
       </section>
     </header>
-    <!-- four options -->
+    <!-- four options floating-->
     <section
       class="text-black max-w-4xl mx-4 md:mx-auto bg-white rounded-2xl shadow-xl md:-mt-28"
     >
@@ -182,35 +182,37 @@
         class="text-center flex flex-col md:flex-row items-center justify-between gap-4 p-4"
       >
         <div
-          class="flex flex-col w-full h-full items-center justify-center bg-gray-200 rounded-2xl p-9"
+          class="flex flex-col w-full h-full items-center justify-center bg-gray-200 rounded-2xl p-12"
         >
-          <h3 class="text-3xl text-blue-600 font-black">Choose the option</h3>
-          <p>Go to study in the year of your choice</p>
+          <h3 class="text-3xl primary-darker font-black leading-none pb-2">
+            Choose the option
+          </h3>
+          <p class="leading-none">Go to study in the year of your choice</p>
         </div>
         <div
           class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
         >
-          <img class="w-2/3" src="./assets/logo/icon/icon1.png" alt="" />
-          <p class="text-lg font-black">Daily Trivia</p>
-          <button class="text-blue-400">
+          <img class="w-2/3" src="./assets/logo/icon/icon1.svg" alt="" />
+          <p class="text-lg font-black pt-3">Daily Trivia</p>
+          <button class="primary-main-button">
             Start Now <i class="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
         <div
           class="flex flex-col items-center justify-center bg-purple-400 text-white h-full w-full p-4 rounded-2xl"
         >
-          <img class="w-2/3" src="./assets/logo/icon/icon2.png" alt="" />
-          <p class="text-lg font-black">Daily Play & Win</p>
-          <button>
+          <img class="w-2/3" src="./assets/logo/icon/icon2.svg" alt="" />
+          <p class="text-lg font-black pt-3">Daily Play & Win</p>
+          <button class="primary-white">
             Start Now <i class="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
         <div
           class="flex flex-col items-center justify-center bordered border-2 border-yellow-300 h-full w-full p-4 rounded-2xl"
         >
-          <img class="w-2/3" src="./assets/logo/icon/icon3.png" alt="" />
-          <p class="text-lg font-black">Play Like King</p>
-          <button class="text-blue-400">
+          <img class="w-2/3" src="./assets/logo/icon/icon3.svg" alt="" />
+          <p class="text-lg font-black pt-3">Play Like King</p>
+          <button class="primary-main-button">
             Start Now <i class="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
@@ -219,38 +221,45 @@
     <!-- play and earn bonus -->
     <section class="py-20">
       <div class="text-center pb-8">
-        <h4 class="text-5xl font-black">Play, Learn and Earn bonus</h4>
-        <p class="text-2xl text-gray-400">Check yourself, Earn yourself!</p>
+        <h4 class="text-5xl font-black primary-header">
+          Play, Learn and Earn bonus
+        </h4>
+        <p class="text-2xl text-gray-400 py-2">
+          Check yourself, Earn yourself!
+        </p>
       </div>
       <!-- 3 cards -->
       <div
-        class="cards grid grid-cols-1 md:grid-cols-3 max-w-4xl mx-auto gap-4 text-white"
+        class="cards grid grid-cols-1 md:grid-cols-3 p-4 max-w-4xl mx-auto gap-4 text-white"
       >
-        <div class="card1 h-96 w-72 rounded-2xl mx-auto relative">
+        <div class="rounded-2xl mx-auto relative">
+          <img src="./assets/img/cards/card1.png" alt="" />
           <div class="absolute bottom-4 left-4">
             <p class="font-black text-2xl">Test your IQ!</p>
             <p>
-              <button class="hover:text-blue-400">
+              <button class="primary-white">
                 Start Now <i class="fa-solid fa-arrow-right-long"></i>
               </button>
             </p>
           </div>
         </div>
-        <div class="card2 h-96 w-72 rounded-2xl mx-auto relative">
+        <div class="rounded-2xl mx-auto relative">
+          <img src="./assets/img/cards/card2.png" alt="" />
           <div class="absolute bottom-4 left-4">
             <p class="font-black text-2xl">Learn & Earn</p>
             <p>
-              <button class="hover:text-blue-400">
+              <button class="primary-white">
                 Start Now <i class="fa-solid fa-arrow-right-long"></i>
               </button>
             </p>
           </div>
         </div>
-        <div class="card3 h-96 w-72 rounded-2xl mx-auto relative">
+        <div class="rounded-2xl mx-auto relative">
+          <img src="./assets/img/cards/card3.png" alt="" />
           <div class="absolute bottom-4 left-4">
             <p class="font-black text-2xl">Test before play</p>
             <p>
-              <button class="hover:text-blue-400">
+              <button class="primary-white">
                 Start Now <i class="fa-solid fa-arrow-right-long"></i>
               </button>
             </p>
@@ -264,7 +273,9 @@
         class="flex flex-col gap-4 items-center justify-center md:w-2/3 mx-auto p-1"
       >
         <div class="text-center">
-          <h2 class="font-black text-5xl pb-6">QuizKwik Winners</h2>
+          <h2 class="font-black text-5xl pb-6 primary-header">
+            QuizKwik Winners
+          </h2>
           <p class="px-2">
             Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
             libero purus at scelerisque cursus. Feugiat mauris integer facilisis
@@ -298,7 +309,7 @@
         </div>
         <div>
           <button
-            class="bg-yellow-200 hover:bg-yellow-400 px-4 py-2 flex items-center justify-center rounded-md"
+            class="bg-yellow-200 primary-black px-4 py-2 flex items-center justify-center rounded-md"
           >
             <p>LEARN MORE</p>
             &nbsp; &nbsp;
@@ -312,7 +323,7 @@
     <!-- Top of the list section -->
     <section class="py-20">
       <div class="text-center">
-        <h3 class="font-black text-5xl text-blue-800">Be top of the list</h3>
+        <h3 class="font-black text-5xl primary-header">Be top of the list</h3>
         <p class="p-2 w-2/3 mx-auto pt-4">
           Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
           libero purus at scelerisque cursus. Feugiat mauris integer facilisis
@@ -320,7 +331,7 @@
           pellentesque et cursus non. Enim sodales pellentesque
         </p>
       </div>
-      <div class="relative py-20">
+      <div class="relative py-8">
         <img
           class="absolute bottom-20 left-2 md:bottom-32 md:left-32 z-0 w-1/4 md:w-auto"
           src="./assets/logo/dotted.png"
@@ -350,7 +361,76 @@
       </div>
     </section>
     <!-- how to play section -->
-    <section><div></div></section>
+    <section
+      class="flex flex-col items-center justify-center py-20 bg-purple-100"
+    >
+      <!-- how it works floating -->
+      <div
+        class="text-center p-4 md:w-2/3 m-4 shadow-2xl rounded-2xl bg-white -mt-44 md:-mt-36"
+      >
+        <p class="font-black text-4xl md:text-5xl primary-header">
+          Here's How It Works
+        </p>
+        <p class="p-4">
+          Lorem ipsum dolor sit amet consectetur. Risus sem dolor et lorem
+          libero purus at scelerisque cursus. Feugiat mauris integer facilisis
+          eget nunc placerat semper orci quis.
+        </p>
+      </div>
+      <!-- 3 instructions -->
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-4 m-4 md:m-0 md:w-3/4 pt-8"
+      >
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Enter the game</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game1.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque lobortis orci ac.
+          </p>
+        </div>
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Play the game</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game2.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque et dui leo aenean.
+          </p>
+        </div>
+        <div>
+          <h6>
+            <span class="bg-white rounded-t-xl px-4 py-1 font-bold"
+              >Earn Coins</span
+            >
+          </h6>
+          <img
+            class="w-full md:h-52"
+            src="./assets/img/games/game3.png"
+            alt=""
+          />
+          <p class="pt-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+            dictum convallis.
+          </p>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>
