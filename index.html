@@ -33,33 +33,14 @@
   <body class="body max-w-6xl mx-auto">
     <header class="header text-white">
       <!-- navbar -->
-      <nav class="navbar pr-6 md:px-32 bg-white bg-opacity-10">
+      <nav class="navbar flex items-center justify-center pr-6 md:px-32 bg-white bg-opacity-10">
+        <!-- nav left mobile -->
         <section class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost md:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-purple-500 rounded-box w-52"
-            >
-              <li><a>Trivia</a></li>
-              <li><a>Quiz</a></li>
-              <li><a>Leaderboard</a></li>
-            </ul>
+          <div
+            class="flex md:hidden navbar-start items-center justify-center pl-7 gap-4"
+          >
+            <img class="w-9" src="./assets/logo/logo.png" alt="" />
+            <p class="font-bold">LOGO</p>
           </div>
           <section class="navbar-center hidden md:flex">
             <ul class="menu menu-horizontal px-1">
@@ -116,7 +97,40 @@
             <p class="font-bold">LOGO</p>
           </div>
         </section>
-        <section class="flex navbar-end items-center justify-end gap-4">
+        <!-- nav right mobile -->
+        <section class="navbar-end flex items-center justify-end md:hidden">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-purple-500 rounded-box"
+            >
+              <li><a>Trivia</a></li>
+              <li><a>Quiz</a></li>
+              <li><a>Leaderboard</a></li>
+              <li><a>Login</a></li>
+              <li><a>Register</a></li>
+            </ul>
+          </div>
+        </section>
+        <section
+          class="hidden md:flex navbar-end items-center justify-end gap-4"
+        >
           <div>
             <button
               class="btn btn-sm normal-case font-normal btn-ghost rounded-full"
@@ -133,6 +147,7 @@
           </div>
         </section>
       </nav>
+      <!-- nav mobile -->
       <!-- hero section -->
       <section class="max-w-4xl mx-auto md:pb-28">
         <section class="grid md:grid-cols-2 gap-8 pt-8">
