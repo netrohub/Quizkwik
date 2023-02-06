@@ -9,6 +9,10 @@
   color: rgba(153, 108, 240, 1);
 }
 
+.choose-options {
+  background-color: rgba(235, 226, 252, 1);
+}
+
 .primary-header {
   color: rgba(71, 71, 71, 1);
 }
@@ -51,6 +55,10 @@
 
 .topsectionright {
   background-image: url("../assets/img/rightbg.png");
+}
+
+.footer-bg {
+  background-color: rgba(18, 18, 32, 1);
 }
 
 /* .card1 {
